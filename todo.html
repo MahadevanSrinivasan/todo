@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>TODO</title>
+  </head>
+  <body>
+  <link href="style/bootstrap.min.css" rel="stylesheet" />
+  <link href="style/todo.css" rel="stylesheet" />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div role="tabpanel">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active col-md-6 text-center">
+              <a href="#pending" aria-controls="pending" role="tab" data-toggle="tab">Pending</a>
+            </li>
+            <li role="presentation" class="col-md-6 text-center">
+              <a href="#completed" aria-controls="completed" role="tab" data-toggle="tab">Completed</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="pending">
+              <div class="todolist not-done">
+                <div class="title text-center">Pending Tasks</div>
+                <div class="input-group">
+                  <input id="whatodo" type="text" class="form-control add-todo" placeholder="What do you want to do?" /> 
+                  <span class="input-group-btn">
+                    <button id="addtodo" class="btn btn-success" type="button">
+                      Add it!
+                    </button>
+                  </span>
+                </div>
+                <!-- /input-group -->
+                
+                <button id="checkAll" class="btn btn-success btn-block">Mark all as done</button>
+                <hr />
+                <ul id="sortable" class="list-unstyled">
+                </ul>
+                <div class="todo-footer">Items Left</div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="completed">
+              <div class="todolist">
+                <div class="title text-center">Completed Tasks</div>
+                <ul id="done-items" class="list-unstyled"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-1.11.1.min.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/todo.js"></script></body>
+</html>

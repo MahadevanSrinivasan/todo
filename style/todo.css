@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Open Sans:400,700,400italic");  
+@import url("https://fonts.googleapis.com/css?family=Archivo Narrow:400,700,400italic");  
+body{
+    font-family: 'Open Sans', sans-serif;  
+    background-color:#EEEEEE;
+}
+.todolist{
+    font-family: 'Open Sans', sans-serif;  
+    background-color:#EEEEEE;
+    padding:20px 20px 10px 20px;
+    margin-top:1px;
+}
+.todolist h2{
+    font-family: 'Open Sans', sans-serif;  
+    margin:0;
+    padding-bottom:20px;
+    text-align:center;
+}
+.form-control{
+    border-radius:0;
+}
+li.ui-state-default{
+    background:#EEEEEE;
+    border:none;
+    border-bottom:1px solid #ddd;
+}
+
+li.ui-state-default:last-child{
+    border-bottom:none;
+}
+
+.todo-footer{
+    background-color:#F4FCE8;
+    margin:0 -20px -10px -20px;
+    padding: 10px 20px;
+}
+#done-items li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+    text-decoration:line-through;
+}
+#done-items li:last-child{
+    border-bottom:none;
+}
+#checkAll{
+    margin-top:10px;
+}
+
+.title
+{
+  font-weight: 700;
+  font-size: 26px;
+}
